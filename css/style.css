@@ -25,41 +25,38 @@ h3 {
 h1 {
   font-size: 3.8rem;
 }
-@media (min-width:768px) {
-    h1{
-        font-size: 5rem;
-    }
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
 }
 
 h2 {
   font-size: 3.2rem;
 }
-@media(min-width:768px){
-    h2{
-        font-size: 4rem;
-    }
-    
+@media (min-width: 768px) {
+  h2 {
+    font-size: 4rem;
+  }
 }
 
 h3 {
   font-size: 2.4rem;
 }
-@media(min-width:768){
-    h3{
-        font-size: 3rem;
-    }
-    
+@media (min-width: 768) {
+  h3 {
+    font-size: 3rem;
+  }
 }
 
 a {
   text-decoration: none;
   color: black;
 }
-.contenedor{
+.contenedor {
   max-width: 120rem;
   margin: 0 auto;
 }
-
 
 /*Utilidades*/
 
@@ -79,7 +76,7 @@ a {
 }
 
 .contenedor-navegacion {
-  border-top: .1rem solid #e1e1e1;
+  border-top: 0.1rem solid #e1e1e1;
 }
 .nav-principal {
   padding: 2rem 0;
@@ -87,27 +84,62 @@ a {
   flex-direction: column;
   align-items: center;
 }
-@media(min-width:768px){
-    .nav-principal{
-        justify-content: space-between;
-        flex-direction: row;
-    }
+@media (min-width: 768px) {
+  .nav-principal {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
-.hero{
-    background-image: url(/imagenes/principal.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 25rem;
+.hero {
+  background-image: url(/imagenes/principal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 25rem;
 }
-@media(min-width:768px){
-    .hero{
-        height: 55rem;
-    }
+@media (min-width: 768px) {
+  .hero {
+    height: 55rem;
+  }
 }
 
 /*CATEGORIAS*/
 
-.listado-categorias{
-    display: flex;
+.categorias {
+  padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+  }
+}
+.categoria {
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) { 
+    .categoria {
+        margin-bottom: 0;
+    }
+}
+.categoria a {
+  display: block;
+  height: 6rem;
+  padding: 2rem;
+  font-size: 2rem;
+  text-align: center;
+
+}
+
+.categoria a:hover {
+  background-color: #037bc0;
+  color: white;
+  border-bottom-right-radius: 1rem;
+}
+
+.categoria img{
+    display: block;
+    width: 100%;
 }
